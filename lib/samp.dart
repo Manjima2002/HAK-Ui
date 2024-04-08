@@ -20,6 +20,13 @@ class _sample extends State<Samp> {
     width: 48.0,
     height: 48.0,
   ),
+  SizedBox(height: 10,),
+  Container(
+    margin: const EdgeInsets.all(10.0),
+    color: Colors.amber[600],
+    width: 48.0,
+    height: 48.0,
+  ),
           ],
             ),
         ),
