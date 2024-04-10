@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Textile.dart';
 import 'package:flutter_application_1/samp.dart';
 
 void main() {
@@ -13,11 +14,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-     
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:Samp(),
+      debugShowCheckedModeBanner: false,
+      home:Homepage(),
+    
     );
   }
 }
