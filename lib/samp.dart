@@ -10,27 +10,28 @@ class Samp extends StatefulWidget {
 class _sample extends State<Samp> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
-    margin: const EdgeInsets.all(10.0),
-    color: Colors.amber[600],
-    width: 48.0,
-    height: 48.0,
-  ),
-  SizedBox(height: 10,),
-  Container(
-    margin: const EdgeInsets.all(10.0),
-    color: Colors.amber[600],
-    width: 48.0,
-    height: 48.0,
-  ),
-          ],
+              margin: const EdgeInsets.all(10.0),
+              color: Colors.amber[600],
+              width: 48.0,
+              height: 48.0,
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              margin: const EdgeInsets.all(10.0),
+              color: Colors.amber[600],
+              width: 48.0,
+              height: 48.0,
+            ),
+          ],
         ),
+      ),
     );
   }
-  
 }
