@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Textile.dart';
-import 'package:flutter_application_1/samp.dart';
+import 'package:flutter_application_1/features/homescreen/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home:Homepage(),
-    
+      home:const  Homepage(),
     );
   }
 }

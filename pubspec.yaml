@@ -35,6 +35,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  carousel_slider: ^4.2.1
+  
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +64,15 @@ flutter:
   assets:
     - asset/images/saree-removebg-preview.png
     - asset/images/dupatta-removebg-preview.png
+    - asset/images/tops-removebg-preview.png
+    - asset/images/material.jpg
+    - asset/images/lehanga-removebg-preview.png
+    - asset/images/kurta-removebg-preview.png
+    - asset/images/daily-removebg-preview.png
+    - asset/images/frock-removebg-preview.png
+    - asset/images/combo.webp
+    - asset/images/combo1.jpg
+    - asset/images/womens-lifestyle.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
