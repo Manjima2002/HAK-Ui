@@ -26,7 +26,7 @@ class _MyWidgetState extends State<Homepage> {
           Categories(),
           HomeCarousel(),
           NewArrivelText(),
-          ArrivalITems()
+          ArrivalITems(),
         ],
       ),
     );
