@@ -1,33 +1,45 @@
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/Account.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
 
-AppBar appbar() {
-    return AppBar(
-      leading: IconButton(
+AppBar appbar(BuildContext context) {
+  return AppBar(
+    leading: IconButton(
+      onPressed: () {
+         Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Account()),
+          );
+      },
+      icon: const Icon(Icons.account_circle),
+    ),
+    actions: [
+      IconButton(
         onPressed: () {},
-        icon: const Icon(Icons.account_circle),
+        icon: const Icon(
+          Icons.favorite,
+          color: Colors.red,
+        ),
       ),
-      actions: [
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.favorite,
-            color: Colors.red,
-          ),
+      IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.notifications,
+          color: Colors.amber.shade800,
         ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.notifications,
-            color: Colors.amber.shade800,
-          ),
+      ),
+      IconButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Cart()),
+          );
+        },
+        icon: const Icon(
+          Icons.shopping_cart,
+          color: Colors.pinkAccent,
         ),
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.shopping_cart,
-            color: Colors.pinkAccent,
-          ),
-        ),
-      ],
-    );
-  }
+      ),
+    ],
+  );
+}

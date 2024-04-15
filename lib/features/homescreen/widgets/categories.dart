@@ -22,7 +22,7 @@ class Categories extends StatelessWidget {
                 ),
                 CategoryIcons(
                     imagePath: 'asset/images/tops-removebg-preview.png',
-                    label: 'Topsp'),
+                    label: 'Tops'),
                 SizedBox(
                   width: 35,
                 ),
@@ -33,7 +33,7 @@ class Categories extends StatelessWidget {
                 ),
                 CategoryIcons(
                     imagePath: 'asset/images/dupatta-removebg-preview.png',
-                    label: 'Tshirt'),
+                    label: 'Dupetta'),
               ],
             ),
             SizedBox(height: 15),

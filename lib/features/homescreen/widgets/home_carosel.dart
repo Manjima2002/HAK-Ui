@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +15,7 @@ class HomeCarousel extends StatelessWidget {
           Container(
             margin: const EdgeInsets.all(6.0),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8.0),
+              borderRadius: BorderRadius.circular(30.0),
               image: const DecorationImage(
                 image: AssetImage("asset/images/womens-lifestyle.jpg"),
                 fit: BoxFit.cover,
@@ -29,7 +25,7 @@ class HomeCarousel extends StatelessWidget {
           Container(
             margin: const EdgeInsets.all(6.0),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8.0),
+              borderRadius: BorderRadius.circular(30.0),
               image: const DecorationImage(
                 image: AssetImage("asset/images/combo1.jpg"),
                 fit: BoxFit.cover,
@@ -39,7 +35,7 @@ class HomeCarousel extends StatelessWidget {
           Container(
             margin: const EdgeInsets.all(6.0),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8.0),
+              borderRadius: BorderRadius.circular(30.0),
               image: const DecorationImage(
                 image: AssetImage("asset/images/combo.webp"),
                 fit: BoxFit.cover,

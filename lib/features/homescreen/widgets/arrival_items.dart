@@ -26,6 +26,11 @@ class ScrollItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<String> imageList = [
+      'asset/images/kurta-removebg-preview.png',
+      'asset/images/dupatta-removebg-preview.png',
+    ];
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: SizedBox(
@@ -40,18 +45,10 @@ class ScrollItem extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(
                   Icons.favorite,
-                  color: Color.fromARGB(255, 73, 239, 31),
+                  color: Color.fromARGB(255, 227, 7, 7),
                 ),
               ),
             ),
-            Positioned(
-              top: 150,
-              child: Text(
-                '$index % off',
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
-              ),
-            )
           ],
         ),
       ),

@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/const/palette.dart';
 
@@ -21,9 +18,8 @@ class HomeSearchBar extends StatelessWidget {
       ),
       child: TextFormField(
         decoration: const InputDecoration(
-          suffixIcon: Icon(Icons.camera),
           border: InputBorder.none,
-          hintText: "Serch by keyword product ID",
+          hintText: "Serch by product ",
         ),
       ),
     );
