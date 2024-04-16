@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/Account.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/Bestcelling.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/Bestcelling_text.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/appbar.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/arrival_items.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/categories.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/categories_text.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/home_carosel.dart';
@@ -31,7 +33,6 @@ class _MyWidgetState extends State<Homepage> {
           ArrivalITems(),
           Bestcellingtext(),
           Bestcelling(),
-       
         ],
       ),
     );

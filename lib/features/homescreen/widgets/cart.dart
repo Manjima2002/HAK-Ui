@@ -26,7 +26,10 @@ class _CartState extends State<Cart> {
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: Colors.pinkAccent,
+              ),
+              borderRadius: BorderRadius.circular(20),
             ),
             child: Row(
               children: [
@@ -122,7 +125,10 @@ class _CartState extends State<Cart> {
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(10),
+              border: Border.all(
+                color: Colors.pinkAccent,
+              ),
+              borderRadius: BorderRadius.circular(20),
             ),
             child: Row(
               children: [
@@ -217,8 +223,11 @@ class _CartState extends State<Cart> {
             margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(10),
+              color: Colors.white,
+              border: Border.all(
+                color: Colors.pinkAccent,
+              ),
+              borderRadius: BorderRadius.circular(20),
             ),
             child: Row(
               children: [
@@ -338,7 +347,7 @@ class _CartState extends State<Cart> {
                   height: 50,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.pinkAccent,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(

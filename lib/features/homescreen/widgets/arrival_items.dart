@@ -12,7 +12,7 @@ class ArrivalITems extends StatelessWidget {
         itemCount: 3,
         itemBuilder: (context, index) {
           return ScrollItem(
-            index: index + 1,
+            index: index,
           );
         },
       ),
@@ -27,7 +27,8 @@ class ScrollItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> imageList = [
-      'asset/images/kurta-removebg-preview.png',
+      'asset/images/daily-removebg-preview.png',
+      'asset/images/saree-removebg-preview.png',
       'asset/images/dupatta-removebg-preview.png',
     ];
 
@@ -38,7 +39,10 @@ class ScrollItem extends StatelessWidget {
         height: 170,
         child: Stack(
           children: [
-            Image.asset('asset/images/saree-removebg-preview.png'),
+            Image.asset(
+              imageList[index],
+              fit: BoxFit.contain,
+            ),
             Positioned(
               left: 80,
               child: IconButton(
