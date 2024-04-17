@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/Account.dart';
-import 'package:flutter_application_1/features/homescreen/widgets/Bestcelling.dart';
-import 'package:flutter_application_1/features/homescreen/widgets/Bestcelling_text.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/Bestselling.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/Bestselling_text.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/appbar.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/arrival_items.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';

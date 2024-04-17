@@ -22,10 +22,10 @@ class _AccountState extends State<Account> {
               child: UserAccountsDrawerHeader(
                 decoration: BoxDecoration(color: Colors.pinkAccent),
                 accountName: Text(
-                  "Abhishek Mishra",
+                  "Anjali Mishra",
                   style: TextStyle(fontSize: 18),
                 ),
-                accountEmail: Text("abhishekm977@gmail.com"),
+                accountEmail: Text("anjali977@gmail.com"),
                 currentAccountPictureSize: Size.square(50),
                 currentAccountPicture: CircleAvatar(
                   backgroundColor: Color.fromARGB(255, 231, 226, 230),

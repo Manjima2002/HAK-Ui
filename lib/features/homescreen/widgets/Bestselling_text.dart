@@ -10,11 +10,10 @@ class Bestcellingtext extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.only(left: 15.0, top: 10, bottom: 10),
       child: Text(
-        "Bestcelling Product",
+        "Bestselling Product",
         style: TextStyle(
             fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
       ),
-  
     );
   }
 }

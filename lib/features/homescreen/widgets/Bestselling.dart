@@ -48,7 +48,10 @@ class _BestcellingState extends State<Bestcelling> {
                 onTap: () {},
                 child: Container(
                   margin: EdgeInsets.all(10),
-                  child: Image.asset("asset/images/frock-removebg-preview.png"),
+                  child: Image.asset(
+                    "asset/images/frock-removebg-preview.png",
+                    height: 150,
+                  ),
                 ),
               ),
               Container(
@@ -109,7 +112,10 @@ class _BestcellingState extends State<Bestcelling> {
                 onTap: () {},
                 child: Container(
                   margin: EdgeInsets.all(10),
-                  child: Image.asset("asset/images/kurta-removebg-preview.png"),
+                  child: Image.asset(
+                    "asset/images/kurta-removebg-preview.png",
+                    height: 150,
+                  ),
                 ),
               ),
               Container(
