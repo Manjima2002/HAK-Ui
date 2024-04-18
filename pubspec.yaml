@@ -73,6 +73,19 @@ flutter:
     - asset/images/combo.webp
     - asset/images/combo1.jpg
     - asset/images/womens-lifestyle.jpg
+    - asset/images/dupetta1.jpg
+    - asset/images/cloth3.jpg
+    - asset/images/dupetta 3.jpg
+    - asset/images/dupetta2.jpg
+    - asset/images/sree3-removebg-preview.png
+    - asset/images/saree2-removebg-preview.png
+    - asset/images/saree4-removebg-preview.png
+    - asset/images/saree5-removebg-preview.png
+    - asset/images/daily1-removebg-preview.png
+    - asset/images/daily 2.jpg
+    - asset/images/daily3-removebg-preview.png
+    - asset/images/daily5-removebg-preview.png
+    - asset/images/dalily6-removebg-preview.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

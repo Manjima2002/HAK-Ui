@@ -1,28 +1,73 @@
-import 'package:flutter/material.dart';
+import 'dart:developer';
 
-class Wishlist extends StatefulWidget {
-  const Wishlist({super.key});
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/homescreen/home_page.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
+import 'package:flutter_application_1/features/homescreen/wishlist.dart';
+
+class Saree extends StatefulWidget {
+  const Saree({super.key});
 
   @override
-  State<Wishlist> createState() => _WishlistState();
+  State<Saree> createState() => _SareeState();
 }
 
-class _WishlistState extends State<Wishlist> {
+class _SareeState extends State<Saree> {
+  String cloth = "saree";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Wishlist Products",
-          style: TextStyle(fontWeight: FontWeight.bold),
+        title: InkWell(
+          // onTap: () {
+          //   if (cloth == "saree") {
+          //     cloth = "shirt";
+          //   } else if (cloth == "shirt") {
+          //     cloth = "saree";
+          //   }
+          //   log(cloth);
+          //   setState(() {});
+          // },
+          child: Text(
+            "Saree",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Homepage()),
+            );
+          },
+          icon: const Icon(Icons.arrow_back),
         ),
         actions: [
           IconButton(
-            icon: Icon(
-              Icons.search,
-              color: Colors.black,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Wishlist()),
+              );
+            },
+            icon: const Icon(
+              Icons.favorite,
+              color: Colors.red,
             ),
-            onPressed: () {},
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Cart()),
+              );
+            },
+            icon: const Icon(
+              Icons.shopping_cart,
+              color: Colors.pinkAccent,
+            ),
           ),
         ],
       ),
@@ -43,30 +88,21 @@ class _WishlistState extends State<Wishlist> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text(
-                        "30%",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
                     Icon(
-                      Icons.favorite,
+                      Icons.favorite_border_outlined,
                       color: Colors.red,
-                    )
+                    ),
                   ],
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    setState(() {});
+                  },
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/frock-removebg-preview.png",
-                      height: 150,
+                      "asset/images/saree2-removebg-preview.png",
+                      height: 170,
                     ),
                   ),
                 ),
@@ -74,10 +110,10 @@ class _WishlistState extends State<Wishlist> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "206 with 1 special Offer",
+                    "\$149  31%off",
                     style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 12,
+                        color: Colors.black,
+                        fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -85,9 +121,9 @@ class _WishlistState extends State<Wishlist> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Modern Stylish Frock",
+                    "Free Delivery",
                     style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.red,
                         fontSize: 12,
                         fontWeight: FontWeight.bold),
                   ),
@@ -107,19 +143,167 @@ class _WishlistState extends State<Wishlist> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text(
-                        "15%",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
                     Icon(
                       Icons.favorite,
+                      color: Colors.red,
+                    )
+                  ],
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    margin: EdgeInsets.all(10),
+                    child: Image.asset(
+                      "asset/images/sree3-removebg-preview.png",
+                      height: 170,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "\$500 20%off",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Free Delivery",
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
+            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.favorite,
+                      color: Colors.red,
+                    )
+                  ],
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    margin: EdgeInsets.all(10),
+                    child: Image.asset(
+                      "asset/images/saree4-removebg-preview.png",
+                      height: 170,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "\$1000 15%off",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Free Delivery",
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
+            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.favorite_border_outlined,
+                      color: Colors.red,
+                    )
+                  ],
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    margin: EdgeInsets.all(10),
+                    child: Image.asset(
+                      "asset/images/saree5-removebg-preview.png",
+                      height: 170,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "\$150",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Delivery \$50",
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
+            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.favorite_border_outlined,
                       color: Colors.red,
                     )
                   ],
@@ -130,7 +314,7 @@ class _WishlistState extends State<Wishlist> {
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/saree-removebg-preview.png",
-                      height: 150,
+                      height: 170,
                     ),
                   ),
                 ),
@@ -138,148 +322,20 @@ class _WishlistState extends State<Wishlist> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "1000 with 1 special Offer",
+                    "\$500 20%off",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 8),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(bottom: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Modern Stylish Saree",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text(
-                        "10%",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                    Icon(
-                      Icons.favorite,
-                      color: Colors.red,
-                    )
-                  ],
-                ),
-                InkWell(
-                  onTap: () {},
-                  child: Container(
-                    margin: EdgeInsets.all(10),
-                    child: Image.asset(
-                      "asset/images/dupatta-removebg-preview.png",
-                      height: 150,
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(bottom: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "150 with 1 special Offer",
-                    style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(bottom: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Printed Duppetta",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text(
-                        "15%",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                    Icon(
-                      Icons.favorite,
-                      color: Colors.red,
-                    )
-                  ],
-                ),
-                InkWell(
-                  onTap: () {},
-                  child: Container(
-                    margin: EdgeInsets.all(10),
-                    child: Image.asset(
-                      "asset/images/tops-removebg-preview.png",
-                      height: 150,
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(bottom: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "300 with 1 special Offer",
-                    style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(bottom: 8),
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Modern Stylish tops",
-                    style: TextStyle(
-                        color: Colors.black,
                         fontSize: 12,
                         fontWeight: FontWeight.bold),
                   ),

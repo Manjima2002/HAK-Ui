@@ -1,11 +1,18 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/dupetta.dart';
+import 'package:flutter_application_1/features/homescreen/saree.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/dailywears.dart';
+import 'package:flutter_application_1/features/homescreen/wishlist.dart';
+import 'package:flutter_application_1/tops.dart';
 
 class Categories extends StatelessWidget {
   const Categories({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Padding(
         padding: EdgeInsets.only(left: 40.0),
@@ -14,35 +21,72 @@ class Categories extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                CategoryIcons(
-                    imagePath: 'asset/images/saree-removebg-preview.png',
-                    label: 'Saree'),
+                GestureDetector(
+                    child: CategoryIcons(
+                        imagePath: 'asset/images/saree-removebg-preview.png',
+                        label: 'Saree'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>  const Saree()),
+                      );
+                    }),
                 SizedBox(
                   width: 35,
                 ),
-                CategoryIcons(
-                    imagePath: 'asset/images/tops-removebg-preview.png',
-                    label: 'Tops'),
+                GestureDetector(
+                    child: CategoryIcons(
+                        imagePath: 'asset/images/tops-removebg-preview.png',
+                        label: 'Tops'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>  const Tops()),
+                      );
+                    }),
                 SizedBox(
                   width: 35,
                 ),
-                CategoryIcons(
-                    imagePath: 'asset/images/material.jpg', label: 'Material'),
+                GestureDetector(
+                    child: CategoryIcons(
+                        imagePath: 'asset/images/material.jpg',
+                        label: 'Material'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Material()),
+                      );
+                    }),
                 SizedBox(
                   width: 35,
                 ),
-                CategoryIcons(
-                    imagePath: 'asset/images/dupatta-removebg-preview.png',
-                    label: 'Dupetta'),
+                GestureDetector(
+                    child: CategoryIcons(
+                        imagePath: 'asset/images/dupatta-removebg-preview.png',
+                        label: 'Dupetta'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>const Dupetta()),
+                      );
+                    }),
               ],
             ),
             SizedBox(height: 15),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                GestureDetector(
+                    child: 
                 CategoryIcons(
                     imagePath: 'asset/images/daily-removebg-preview.png',
-                    label: 'Dailwear'),
+                    label: 'Dailywears'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>Dailywear()),
+                      );
+                    }),
                 SizedBox(
                   width: 35,
                 ),
@@ -52,9 +96,17 @@ class Categories extends StatelessWidget {
                 SizedBox(
                   width: 35,
                 ),
-                CategoryIcons(
-                    imagePath: 'asset/images/frock-removebg-preview.png',
-                    label: 'Frock'),
+                // GestureDetector(
+                    // child: 
+                    CategoryIcons(
+                        imagePath: 'asset/images/frock-removebg-preview.png',
+                        label: 'Frock'),
+                    // onTap: () {
+                    //   Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(builder: (context) =>Frock()),
+                    //   );
+                    // }),
                 SizedBox(
                   width: 35,
                 ),
@@ -90,3 +142,4 @@ class CategoryIcons extends StatelessWidget {
     );
   }
 }
+
