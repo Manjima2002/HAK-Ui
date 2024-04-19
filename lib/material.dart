@@ -6,32 +6,21 @@ import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
 
-class Material extends StatefulWidget {
-  const Material({super.key});
+class MaterialS extends StatefulWidget {
+  const MaterialS({super.key});
 
   @override
-  State<Material> createState() => _MaterialState();
+  State<MaterialS> createState() => _MaterialSState();
 }
 
-class _MaterialState extends State<Material> {
-  // String cloth = "saree";
-
+class _MaterialSState extends State<MaterialS> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: InkWell(
-          // onTap: () {
-          //   if (cloth == "saree") {
-          //     cloth = "shirt";
-          //   } else if (cloth == "shirt") {
-          //     cloth = "saree";
-          //   }
-          //   log(cloth);
-          //   setState(() {});
-          // },
           child: Text(
-            "Saree",
+            "Materials",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
@@ -101,7 +90,7 @@ class _MaterialState extends State<Material> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/saree-removebg-preview.png",
+                      "asset/images/cloth3.jpg",
                       height: 150,
                     ),
                   ),
@@ -154,7 +143,7 @@ class _MaterialState extends State<Material> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/saree-removebg-preview.png",
+                      "asset/images/material1.jpg",
                       height: 150,
                     ),
                   ),
@@ -207,7 +196,7 @@ class _MaterialState extends State<Material> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/saree-removebg-preview.png",
+                      "asset/images/material2.jpg",
                       height: 150,
                     ),
                   ),
@@ -260,7 +249,7 @@ class _MaterialState extends State<Material> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/saree-removebg-preview.png",
+                      "asset/images/material.jpg",
                       height: 150,
                     ),
                   ),
@@ -313,7 +302,7 @@ class _MaterialState extends State<Material> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/saree-removebg-preview.png",
+                      "asset/images/material1.jpg",
                       height: 150,
                     ),
                   ),

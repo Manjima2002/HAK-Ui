@@ -4,7 +4,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/dupetta.dart';
 import 'package:flutter_application_1/features/homescreen/saree.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/dailywears.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/kurta.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
+import 'package:flutter_application_1/material.dart';
 import 'package:flutter_application_1/tops.dart';
 
 class Categories extends StatelessWidget {
@@ -28,7 +30,7 @@ class Categories extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>  const Saree()),
+                        MaterialPageRoute(builder: (context) => const Saree()),
                       );
                     }),
                 SizedBox(
@@ -41,7 +43,7 @@ class Categories extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>  const Tops()),
+                        MaterialPageRoute(builder: (context) => const Tops()),
                       );
                     }),
                 SizedBox(
@@ -54,7 +56,8 @@ class Categories extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const Material()),
+                        MaterialPageRoute(
+                            builder: (context) => const MaterialS()),
                       );
                     }),
                 SizedBox(
@@ -67,7 +70,8 @@ class Categories extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>const Dupetta()),
+                        MaterialPageRoute(
+                            builder: (context) => const Dupetta()),
                       );
                     }),
               ],
@@ -77,36 +81,35 @@ class Categories extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 GestureDetector(
-                    child: 
-                CategoryIcons(
-                    imagePath: 'asset/images/daily-removebg-preview.png',
-                    label: 'Dailywears'),
+                    child: CategoryIcons(
+                        imagePath: 'asset/images/daily-removebg-preview.png',
+                        label: 'Dailywears'),
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>Dailywear()),
+                        MaterialPageRoute(builder: (context) => Dailywear()),
+                      );
+                    }),
+                SizedBox(
+                  width: 35,
+                ),
+                GestureDetector(
+                    child:
+                CategoryIcons(
+                    imagePath: 'asset/images/kurta-removebg-preview.png',
+                    label: 'Kurta'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Kurta()),
                       );
                     }),
                 SizedBox(
                   width: 35,
                 ),
                 CategoryIcons(
-                    imagePath: 'asset/images/kurta-removebg-preview.png',
-                    label: 'Kurta'),
-                SizedBox(
-                  width: 35,
-                ),
-                // GestureDetector(
-                    // child: 
-                    CategoryIcons(
-                        imagePath: 'asset/images/frock-removebg-preview.png',
-                        label: 'Frock'),
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(builder: (context) =>Frock()),
-                    //   );
-                    // }),
+                    imagePath: 'asset/images/frock-removebg-preview.png',
+                    label: 'Frock'),
                 SizedBox(
                   width: 35,
                 ),
@@ -142,4 +145,3 @@ class CategoryIcons extends StatelessWidget {
     );
   }
 }
-

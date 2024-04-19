@@ -6,21 +6,21 @@ import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
 
-class Tops extends StatefulWidget {
-  const Tops({super.key});
+class Kurta extends StatefulWidget {
+  const Kurta({super.key});
 
   @override
-  State<Tops> createState() => _TopsState();
+  State<Kurta> createState() => _KurtaState();
 }
 
-class _TopsState extends State<Tops> {
+class _KurtaState extends State<Kurta> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: InkWell(
           child: Text(
-            "Tops",
+            "Kurta sets",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
@@ -90,7 +90,7 @@ class _TopsState extends State<Tops> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/top1.jpg",
+                      "asset/images/kurta4-removebg-preview.png",
                       height: 150,
                     ),
                   ),
@@ -143,7 +143,7 @@ class _TopsState extends State<Tops> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/top2.jpg",
+                      "asset/images/kurta5-removebg-preview.png",
                       height: 150,
                     ),
                   ),
@@ -196,7 +196,7 @@ class _TopsState extends State<Tops> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/tops-removebg-preview.png",
+                      "asset/images/kurta6-removebg-preview.png",
                       height: 150,
                     ),
                   ),
@@ -249,7 +249,7 @@ class _TopsState extends State<Tops> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/top3.jpg",
+                      "asset/images/kurta7-removebg-preview.png",
                       height: 150,
                     ),
                   ),
@@ -302,7 +302,7 @@ class _TopsState extends State<Tops> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/top4.jpg",
+                      "asset/images/kurta5-removebg-preview.png",
                       height: 150,
                     ),
                   ),

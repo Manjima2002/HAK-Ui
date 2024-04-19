@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/myprofile.dart';
 
 class Account extends StatefulWidget {
   const Account({super.key});
@@ -40,7 +41,10 @@ class _AccountState extends State<Account> {
               leading: const Icon(Icons.person),
               title: const Text(' My Profile '),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Myprofile()),
+                );
               },
             ),
             ListTile(
