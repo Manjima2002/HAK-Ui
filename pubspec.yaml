@@ -97,6 +97,15 @@ flutter:
     - asset/images/kurta5-removebg-preview.png
     - asset/images/kurta6-removebg-preview.png
     - asset/images/kurta7-removebg-preview.png
+    - asset/images/frock1-removebg-preview.png
+    - asset/images/frock2-removebg-preview.png
+    - asset/images/frock3-removebg-preview.png
+    - asset/images/frock4-removebg-preview.png
+    - asset/images/frock5-removebg-preview.png
+    - asset/images/lahenga1-removebg-preview.png
+    - asset/images/lahenga2-removebg-preview.png
+    - asset/images/lahenga3-removebg-preview.png
+    - asset/images/lahenga4-removebg-preview.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

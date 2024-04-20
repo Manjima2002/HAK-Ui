@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/editprofile.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/myprofile.dart';
 
 class Account extends StatefulWidget {
@@ -51,7 +52,10 @@ class _AccountState extends State<Account> {
               leading: const Icon(Icons.edit),
               title: const Text(' Edit Profile '),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Editprofile()),
+                );
               },
             ),
             ListTile(

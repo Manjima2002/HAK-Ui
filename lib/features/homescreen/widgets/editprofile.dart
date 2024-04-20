@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
 
-class Myprofile extends StatefulWidget {
-  const Myprofile({super.key});
+class Editprofile extends StatefulWidget {
+  const Editprofile({super.key});
 
   @override
-  State<Myprofile> createState() => _MyprofileState();
+  State<Editprofile> createState() => _EditprofileState();
 }
 
-class _MyprofileState extends State<Myprofile> {
+class _EditprofileState extends State<Editprofile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

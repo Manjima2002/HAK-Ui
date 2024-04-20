@@ -4,7 +4,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/dupetta.dart';
 import 'package:flutter_application_1/features/homescreen/saree.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/dailywears.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/frock.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/kurta.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/lehanga.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
 import 'package:flutter_application_1/material.dart';
 import 'package:flutter_application_1/tops.dart';
@@ -94,10 +96,9 @@ class Categories extends StatelessWidget {
                   width: 35,
                 ),
                 GestureDetector(
-                    child:
-                CategoryIcons(
-                    imagePath: 'asset/images/kurta-removebg-preview.png',
-                    label: 'Kurta'),
+                    child: CategoryIcons(
+                        imagePath: 'asset/images/kurta-removebg-preview.png',
+                        label: 'Kurta'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -107,15 +108,29 @@ class Categories extends StatelessWidget {
                 SizedBox(
                   width: 35,
                 ),
-                CategoryIcons(
-                    imagePath: 'asset/images/frock-removebg-preview.png',
-                    label: 'Frock'),
+                GestureDetector(
+                    child: CategoryIcons(
+                        imagePath: 'asset/images/frock-removebg-preview.png',
+                        label: 'Frock'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Frock()),
+                      );
+                    }),
                 SizedBox(
                   width: 35,
                 ),
-                CategoryIcons(
-                    imagePath: 'asset/images/lehanga-removebg-preview.png',
-                    label: 'Lahenga'),
+                GestureDetector(
+                    child: CategoryIcons(
+                        imagePath: 'asset/images/lehanga-removebg-preview.png',
+                        label: 'Lahenga'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Lahenga()),
+                      );
+                    }),
               ],
             ),
           ],
