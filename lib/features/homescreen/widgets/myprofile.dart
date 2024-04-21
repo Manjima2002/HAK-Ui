@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/Account.dart';
 
 class Myprofile extends StatefulWidget {
   const Myprofile({super.key});
@@ -18,15 +19,16 @@ class _MyprofileState extends State<Myprofile> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Homepage()),
+              MaterialPageRoute(builder: (context) => Account()),
             );
           },
           icon: const Icon(Icons.arrow_back),
         ),
         centerTitle: true,
         title: Text(
-          "Edit Profile",
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          "My Profile",
+          style: TextStyle(color: Colors.black, 
+          fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.pinkAccent,
       ),
@@ -37,117 +39,78 @@ class _MyprofileState extends State<Myprofile> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.grey.shade200,
-                  ),
-                  padding: EdgeInsets.all(16),
-                  child: IconButton(
-                    icon: Icon(
-                      Icons.person,
-                      size: 50,
-                      color: Colors.black,
+                Card(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.grey.shade200,
                     ),
-                    onPressed: () {},
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Enter your name',
-                      labelText: 'Name',
-                      labelStyle: TextStyle(color: Colors.black),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
+                    padding: EdgeInsets.all(16),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.person,
+                        size: 50,
+                        color: Colors.black,
                       ),
+                      onPressed: () {},
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Enter your Phone number',
-                      labelText: 'Phone Number',
-                      labelStyle: TextStyle(color: Colors.black),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                  ),
+                ProfileTile(
+                  label: 'Anjali Mishra',
+                  icon: Icons.person,
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Enter your Emailid',
-                      labelText: 'Emailid',
-                      labelStyle: TextStyle(color: Colors.black),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                  ),
+                ProfileTile(
+                  label: '123456789',
+                  icon: Icons.phone,
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Enter your Pincode',
-                      labelText: 'Pincode',
-                      labelStyle: TextStyle(color: Colors.black),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                  ),
+                ProfileTile(
+                  label: 'Email',
+                  icon: Icons.email,
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Enter your city',
-                      labelText: 'city',
-                      labelStyle: TextStyle(color: Colors.black),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                  ),
+                ProfileTile(
+                  label: 'Pincode',
+                  icon: Icons.pin,
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Enter your State',
-                      labelText: 'State',
-                      labelStyle: TextStyle(color: Colors.black),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                  ),
+                ProfileTile(
+                  label: 'State',
+                  icon: Icons.location_city,
                 ),
-                ElevatedButton(
-                  child: Text(
-                    'Save',
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.pinkAccent,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(
-                        50,
-                      ))),
+                ProfileTile(
+                  label: 'City',
+                  icon: Icons.pin,
                 ),
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+}
+
+class ProfileTile extends StatelessWidget {
+  final String label;
+  final IconData icon;
+  const ProfileTile({
+    super.key,
+    required this.label,
+    required this.icon,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        ListTile(
+          leading: Icon(
+            icon,
+            color: Colors.pinkAccent,
+          ),
+          title: Text(label),
+        ),
+        Divider(),
+      ],
     );
   }
 }

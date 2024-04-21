@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/Account.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/cart2.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/notification.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
 
@@ -44,7 +45,7 @@ AppBar appbar(BuildContext context) {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const Cart()),
+            MaterialPageRoute(builder: (context) => const Carts()),
           );
         },
         icon: const Icon(
