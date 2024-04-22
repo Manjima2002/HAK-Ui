@@ -1,6 +1,5 @@
-import 'dart:developer';
 
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
@@ -18,7 +17,7 @@ class _KurtaState extends State<Kurta> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: InkWell(
+        title: const InkWell(
           child: Text(
             "Kurta sets",
             style: TextStyle(fontWeight: FontWeight.bold),
@@ -28,7 +27,7 @@ class _KurtaState extends State<Kurta> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Homepage()),
+              MaterialPageRoute(builder: (context) => const Homepage()),
             );
           },
           icon: const Icon(Icons.arrow_back),
@@ -38,7 +37,7 @@ class _KurtaState extends State<Kurta> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Wishlist()),
+                MaterialPageRoute(builder: (context) => const Wishlist()),
               );
             },
             icon: const Icon(
@@ -66,15 +65,15 @@ class _KurtaState extends State<Kurta> {
         shrinkWrap: true,
         children: [
           Container(
-            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+            padding: const EdgeInsets.only(left: 15, right: 15, top: 10),
+            margin: const EdgeInsets.symmetric(vertical: 7, horizontal: 10),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               children: [
-                Row(
+               const  Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
@@ -88,7 +87,7 @@ class _KurtaState extends State<Kurta> {
                     setState(() {});
                   },
                   child: Container(
-                    margin: EdgeInsets.all(10),
+                    margin:const  EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/kurta4-removebg-preview.png",
                       height: 150,
@@ -96,9 +95,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const  EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "\$149  31%off",
                     style: TextStyle(
                         color: Colors.black,
@@ -107,9 +106,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding:const  EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
@@ -121,15 +120,15 @@ class _KurtaState extends State<Kurta> {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+            padding:const  EdgeInsets.only(left: 15, right: 15, top: 10),
+            margin: const EdgeInsets.symmetric(vertical: 7, horizontal: 10),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
@@ -141,7 +140,7 @@ class _KurtaState extends State<Kurta> {
                 InkWell(
                   onTap: () {},
                   child: Container(
-                    margin: EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/kurta5-removebg-preview.png",
                       height: 150,
@@ -149,9 +148,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "\$500 20%off",
                     style: TextStyle(
                         color: Colors.black,
@@ -160,9 +159,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
@@ -174,15 +173,15 @@ class _KurtaState extends State<Kurta> {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+            padding: const EdgeInsets.only(left: 15, right: 15, top: 10),
+            margin: const EdgeInsets.symmetric(vertical: 7, horizontal: 10),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
@@ -194,7 +193,7 @@ class _KurtaState extends State<Kurta> {
                 InkWell(
                   onTap: () {},
                   child: Container(
-                    margin: EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/kurta6-removebg-preview.png",
                       height: 150,
@@ -202,9 +201,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "\$1000 15%off",
                     style: TextStyle(
                         color: Colors.black,
@@ -213,9 +212,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
@@ -227,15 +226,15 @@ class _KurtaState extends State<Kurta> {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+            padding: const EdgeInsets.only(left: 15, right: 15, top: 10),
+            margin: const EdgeInsets.symmetric(vertical: 7, horizontal: 10),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
@@ -247,7 +246,7 @@ class _KurtaState extends State<Kurta> {
                 InkWell(
                   onTap: () {},
                   child: Container(
-                    margin: EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/kurta7-removebg-preview.png",
                       height: 150,
@@ -255,9 +254,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "\$150",
                     style: TextStyle(
                         color: Colors.black,
@@ -266,9 +265,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "Delivery \$50",
                     style: TextStyle(
                         color: Colors.red,
@@ -280,15 +279,15 @@ class _KurtaState extends State<Kurta> {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-            margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
+            padding: const EdgeInsets.only(left: 15, right: 15, top: 10),
+            margin: const EdgeInsets.symmetric(vertical: 7, horizontal: 10),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
@@ -300,7 +299,7 @@ class _KurtaState extends State<Kurta> {
                 InkWell(
                   onTap: () {},
                   child: Container(
-                    margin: EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/kurta5-removebg-preview.png",
                       height: 150,
@@ -308,9 +307,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "\$500 20%off",
                     style: TextStyle(
                         color: Colors.black,
@@ -319,9 +318,9 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
-                  child: Text(
+                  child: const Text(
                     "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
