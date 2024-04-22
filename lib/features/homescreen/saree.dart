@@ -1,9 +1,10 @@
-import 'dart:developer';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/detail_page.dart/product_detail_page.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/cart2.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/sareedescription.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
 
 class Saree extends StatefulWidget {
@@ -61,7 +62,7 @@ class _SareeState extends State<Saree> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Cart()),
+                MaterialPageRoute(builder: (context) => const Carts()),
               );
             },
             icon: const Icon(
@@ -96,10 +97,14 @@ class _SareeState extends State<Saree> {
                 ),
                 InkWell(
                   onTap: () {
-                    setState(() {});
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ProductDetailPage()),
+                    );
                   },
                   child: Container(
-                    margin: EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/saree2-removebg-preview.png",
                       height: 170,
@@ -107,7 +112,7 @@ class _SareeState extends State<Saree> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
                     "\$149  31%off",
@@ -258,7 +263,7 @@ class _SareeState extends State<Saree> {
                 InkWell(
                   onTap: () {},
                   child: Container(
-                    margin: EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/saree5-removebg-preview.png",
                       height: 170,

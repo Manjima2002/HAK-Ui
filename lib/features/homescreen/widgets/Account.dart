@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/editprofile.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/myprofile.dart';
 
@@ -62,7 +63,10 @@ class _AccountState extends State<Account> {
               leading: const Icon(Icons.logout),
               title: const Text('LogOut'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Homepage()),
+                );
               },
             ),
           ],

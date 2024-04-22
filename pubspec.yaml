@@ -36,7 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   carousel_slider: ^4.2.1
-  
+  insta_image_viewer:
 
 dev_dependencies:
   flutter_test:
@@ -106,6 +106,7 @@ flutter:
     - asset/images/lahenga2-removebg-preview.png
     - asset/images/lahenga3-removebg-preview.png
     - asset/images/lahenga4-removebg-preview.png
+    - asset/saree/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
