@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/dupetta.dart';
+import 'package:flutter_application_1/features/homescreen/widgets/dupetta.dart';
 import 'package:flutter_application_1/features/homescreen/saree.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/dailywears.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/frock.dart';

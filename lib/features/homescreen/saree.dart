@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/detail_page.dart/product_detail_page.dart';
+import 'package:flutter_application_1/features/detail_page.dart/saree_detail_page.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart2.dart';
-import 'package:flutter_application_1/features/homescreen/widgets/sareedescription.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
 
 class Saree extends StatefulWidget {
@@ -100,7 +99,7 @@ class _SareeState extends State<Saree> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => ProductDetailPage()),
+                          builder: (context) => Sareedetailpage()),
                     );
                   },
                   child: Container(

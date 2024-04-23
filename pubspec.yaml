@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.6
   carousel_slider: ^4.2.1
   insta_image_viewer:
+  flutter_rating_bar: ^4.0.1 
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -107,6 +109,8 @@ flutter:
     - asset/images/lahenga3-removebg-preview.png
     - asset/images/lahenga4-removebg-preview.png
     - asset/saree/
+    - asset/tops/
+    - asset/cloth/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

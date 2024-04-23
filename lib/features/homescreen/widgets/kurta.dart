@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
@@ -13,6 +11,7 @@ class Kurta extends StatefulWidget {
 }
 
 class _KurtaState extends State<Kurta> {
+  bool isFav = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,12 +72,12 @@ class _KurtaState extends State<Kurta> {
             ),
             child: Column(
               children: [
-               const  Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
                       Icons.favorite_border_outlined,
-                      color: Colors.red,
+                      color: Colors.black,
                     ),
                   ],
                 ),
@@ -87,7 +86,7 @@ class _KurtaState extends State<Kurta> {
                     setState(() {});
                   },
                   child: Container(
-                    margin:const  EdgeInsets.all(10),
+                    margin: const EdgeInsets.all(10),
                     child: Image.asset(
                       "asset/images/kurta4-removebg-preview.png",
                       height: 150,
@@ -95,7 +94,7 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding: const  EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: const Text(
                     "\$149  31%off",
@@ -106,7 +105,7 @@ class _KurtaState extends State<Kurta> {
                   ),
                 ),
                 Container(
-                  padding:const  EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: const Text(
                     "Free Delivery",
@@ -120,7 +119,7 @@ class _KurtaState extends State<Kurta> {
             ),
           ),
           Container(
-            padding:const  EdgeInsets.only(left: 15, right: 15, top: 10),
+            padding: const EdgeInsets.only(left: 15, right: 15, top: 10),
             margin: const EdgeInsets.symmetric(vertical: 7, horizontal: 10),
             decoration: BoxDecoration(
               color: Colors.white,

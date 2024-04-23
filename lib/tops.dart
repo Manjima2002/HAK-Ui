@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/detail_page.dart/top_detail_page.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
@@ -85,7 +86,10 @@ class _TopsState extends State<Tops> {
                 ),
                 InkWell(
                   onTap: () {
-                    setState(() {});
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Topdetailpage()),
+                    );
                   },
                   child: Container(
                     margin: EdgeInsets.all(10),
