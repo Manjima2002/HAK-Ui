@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
 class Loginpage extends StatefulWidget {
@@ -12,12 +13,108 @@ class _LoginpageState extends State<Loginpage> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     return Scaffold(
-        body: Column(
-      children: [
-        Lottie.asset('assets/animation/login_animation.json'),
-      ],
-    ));
+      body: Stack(
+        children: [
+          Column(
+            children: [
+              Lottie.asset(
+                'assets/animation/login_animation.json',
+              ),
+              SizedBox(
+                height: 100,
+              ),
+              Text(
+                'Hey Welcome Back',
+                style: GoogleFonts.aBeeZee(
+                    fontSize: 30, fontWeight: FontWeight.bold),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 30),
+                child: Container(
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color.fromRGBO(35, 57, 83, 0.455),
+                            offset: Offset(
+                              20,
+                              10,
+                            ),
+                            blurRadius: 19),
+                      ],
+                      color: const Color.fromARGB(255, 240, 235, 235),
+                      borderRadius: BorderRadius.circular(10)),
+                  height: height * 0.05,
+                  width: width * 0.7,
+                  child: TextField(
+                    showCursor: false,
+                    cursorHeight: height * 0.03,
+                    cursorColor: Color.fromARGB(255, 124, 123, 123),
+                    decoration: InputDecoration(
+                      hintText: 'Mobile Number',
+                      hintStyle: GoogleFonts.aBeeZee(
+                        color: Colors.grey,
+                      ),
+                      prefixIcon: Icon(Icons.phone),
+                      border: InputBorder.none,
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          width: 2,
+                          color: Color.fromRGBO(35, 57, 83, 1),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Container(
+                height: 50,
+                width: 170,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                        color: Color.fromRGBO(35, 57, 83, 0.455),
+                        offset: Offset(
+                          20,
+                          10,
+                        ),
+                        blurRadius: 19),
+                  ],
+                  borderRadius: BorderRadius.circular(18),
+                  color: Color.fromRGBO(35, 57, 83, 1),
+                ),
+                child: Center(
+                    child: Text(
+                  'Send OTP',
+                  style: GoogleFonts.aBeeZee(color: Colors.white),
+                )),
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Dont Have an Account',
+                      style: GoogleFonts.aBeeZee(
+                          fontSize: 10, fontWeight: FontWeight.bold)),
+                  SizedBox(
+                    width: 40,
+                  ),
+                  TextButton(onPressed: () {}, child: Text('Sign Up'))
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -41,7 +138,7 @@ class GradiantContainer extends StatelessWidget {
         gradient: LinearGradient(
           colors: [
             Color.fromARGB(255, 240, 4, 83),
-            Color.fromARGB(255, 214, 73, 120)
+            Color.fromARGB(255, 214, 73, 120),
           ],
         ),
       ),
