@@ -19,6 +19,7 @@ class _LoginpageState extends State<Loginpage> {
           ),
           height: height,
           width: double.infinity,
+          
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
