@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/auth/login/login.dart';
 
 void main() {
   runApp(const MyApp());
-  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
