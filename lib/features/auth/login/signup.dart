@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/features/auth/login/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Loginpage extends StatefulWidget {
-  const Loginpage({super.key});
+class Signup extends StatefulWidget {
+  const Signup({super.key});
 
   @override
-  State<Loginpage> createState() => _LoginpageState();
+  State<Signup> createState() => _SignupState();
 }
 
-class _LoginpageState extends State<Loginpage> {
+class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +28,7 @@ class _LoginpageState extends State<Loginpage> {
                   height: 20,
                 ),
                 Text(
-                  ' Log In Now!',
+                  ' Sign Up Now!',
                   style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
                 ),
               ],
@@ -67,7 +65,7 @@ class _LoginpageState extends State<Loginpage> {
             ),
             ElevatedButton(
               child: Text(
-                'Send OTP',
+                'Sign Up',
                 style: TextStyle(color: Colors.white),
               ),
               style: ElevatedButton.styleFrom(
@@ -78,7 +76,7 @@ class _LoginpageState extends State<Loginpage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Don't Have an Account?",
+                Text("Already Have an Account?",
                     style: GoogleFonts.aBeeZee(
                         fontSize: 12, fontWeight: FontWeight.bold)),
                 TextButton(
@@ -89,7 +87,7 @@ class _LoginpageState extends State<Loginpage> {
                     );
                   },
                   child: Text(
-                    'Sign Up',
+                    'Log In',
                     style: TextStyle(color: Colors.pink),
                   ),
                 ),
