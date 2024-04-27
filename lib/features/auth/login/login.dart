@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
@@ -12,16 +13,11 @@ class _LoginpageState extends State<Loginpage> {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
-      body: SingleChildScrollView(
-        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-        child: Stack(
-          children: [
-            GradiantContainer(height: height),
-            NewWidget(height: height),
-          ],
-        ),
-      ),
-    );
+        body: Column(
+      children: [
+        Lottie.asset('assets/animation/login_animation.json'),
+      ],
+    ));
   }
 }
 

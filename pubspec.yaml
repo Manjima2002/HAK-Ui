@@ -39,6 +39,7 @@ dependencies:
   insta_image_viewer:
   flutter_rating_bar: ^4.0.1 
   google_fonts: ^6.2.1
+  lottie: ^3.1.0
 
 dev_dependencies:
   flutter_test:
@@ -116,6 +117,7 @@ flutter:
     - asset/kurta/
     - asset/frock/
     - asset/lahenga/
+    - assets/animation/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
