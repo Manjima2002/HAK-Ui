@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/detail_page.dart/kurta_detail.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
 import 'package:flutter_application_1/features/homescreen/widgets/cart.dart';
 import 'package:flutter_application_1/features/homescreen/wishlist.dart';
@@ -77,13 +78,17 @@ class _KurtaState extends State<Kurta> {
                   children: [
                     Icon(
                       Icons.favorite_border_outlined,
-                      color: Colors.black,
+                      color: Color.fromARGB(255, 226, 8, 8),
                     ),
                   ],
                 ),
                 InkWell(
                   onTap: () {
-                    setState(() {});
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Kurtadetailpage()),
+                    );
                   },
                   child: Container(
                     margin: const EdgeInsets.all(10),

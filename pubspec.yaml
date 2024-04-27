@@ -111,6 +111,11 @@ flutter:
     - asset/saree/
     - asset/tops/
     - asset/cloth/
+    - asset/dupetta/
+    - asset/dailywear/
+    - asset/kurta/
+    - asset/frock/
+    - asset/lahenga/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
