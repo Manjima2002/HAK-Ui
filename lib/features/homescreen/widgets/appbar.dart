@@ -21,7 +21,7 @@ AppBar appbar(BuildContext context) {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Carts()),
+            MaterialPageRoute(builder: (context) => Wishlist()),
           );
         },
         icon: const Icon(

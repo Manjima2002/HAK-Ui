@@ -1,5 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/detail_page.dart/combo1_detail.dart';
+import 'package:flutter_application_1/features/detail_page.dart/combo2_detail.dart';
+import 'package:flutter_application_1/features/homescreen/saree.dart';
 
 class HomeCarousel extends StatelessWidget {
   const HomeCarousel({
@@ -12,23 +15,39 @@ class HomeCarousel extends StatelessWidget {
       padding: const EdgeInsets.only(top: 30),
       child: CarouselSlider(
         items: [
-          Container(
-            margin: const EdgeInsets.all(6.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30.0),
-              image: const DecorationImage(
-                image: AssetImage("asset/images/womens-lifestyle.jpg"),
-                fit: BoxFit.cover,
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Combodetailpage()),
+              );
+            },
+            child: Container(
+              margin: const EdgeInsets.all(6.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30.0),
+                image: const DecorationImage(
+                  image: AssetImage("asset/images/womens-lifestyle.jpg"),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
-          Container(
-            margin: const EdgeInsets.all(6.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30.0),
-              image: const DecorationImage(
-                image: AssetImage("asset/images/combo1.jpg"),
-                fit: BoxFit.cover,
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Combo_two_detailpage()),
+              );
+            },
+            child: Container(
+              margin: const EdgeInsets.all(6.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30.0),
+                image: const DecorationImage(
+                  image: AssetImage("asset/images/combo1.jpg"),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),

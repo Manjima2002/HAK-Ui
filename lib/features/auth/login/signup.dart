@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/auth/login/login.dart';
+import 'package:flutter_application_1/features/auth/login/otpverification.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Signup extends StatefulWidget {
@@ -65,13 +67,18 @@ class _SignupState extends State<Signup> {
             ),
             ElevatedButton(
               child: Text(
-                'Sign Up',
+                'Send OTP',
                 style: TextStyle(color: Colors.white),
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Otpverification()),
+                );
+              },
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -83,7 +90,7 @@ class _SignupState extends State<Signup> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Signup()),
+                      MaterialPageRoute(builder: (context) => Loginpage()),
                     );
                   },
                   child: Text(

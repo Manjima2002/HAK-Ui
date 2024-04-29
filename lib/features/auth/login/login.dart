@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/features/auth/login/otpverification.dart';
 import 'package:flutter_application_1/features/auth/login/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -73,7 +74,12 @@ class _LoginpageState extends State<Loginpage> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Otpverification()),
+                );
+              },
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
