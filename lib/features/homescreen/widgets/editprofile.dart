@@ -56,7 +56,6 @@ class _EditprofileState extends State<Editprofile> {
                   padding: const EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      // hintText: 'Enter your name',
                       labelText: 'Name',
                       labelStyle: TextStyle(color: Colors.black),
                       border: OutlineInputBorder(
@@ -69,7 +68,6 @@ class _EditprofileState extends State<Editprofile> {
                   padding: const EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Enter your Phone number',
                       labelText: 'Phone Number',
                       labelStyle: TextStyle(color: Colors.black),
                       border: OutlineInputBorder(
@@ -82,7 +80,6 @@ class _EditprofileState extends State<Editprofile> {
                   padding: const EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Enter your Emailid',
                       labelText: 'Emailid',
                       labelStyle: TextStyle(color: Colors.black),
                       border: OutlineInputBorder(
@@ -95,7 +92,6 @@ class _EditprofileState extends State<Editprofile> {
                   padding: const EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Enter your Pincode',
                       labelText: 'Pincode',
                       labelStyle: TextStyle(color: Colors.black),
                       border: OutlineInputBorder(
@@ -121,7 +117,6 @@ class _EditprofileState extends State<Editprofile> {
                   padding: const EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Enter your State',
                       labelText: 'State',
                       labelStyle: TextStyle(color: Colors.black),
                       border: OutlineInputBorder(

@@ -113,6 +113,7 @@ flutter:
     - asset/images/combo2.jpg
     - asset/images/combo3.jpg
     - asset/images/combo4.jpg
+    - asset/images/frock6-removebg-preview.png
     - asset/saree/
     - asset/tops/
     - asset/cloth/
@@ -124,6 +125,8 @@ flutter:
     - assets/animation/
     - asset/images/Copy of DIL HAK_ (1).png
     - asset/carousel/
+    - asset/frockdetail/
+    - asset/dupettasetdetail/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

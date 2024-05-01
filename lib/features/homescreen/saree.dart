@@ -128,7 +128,7 @@ class _SareeState extends State<Saree> {
                     "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -181,7 +181,7 @@ class _SareeState extends State<Saree> {
                     "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -234,7 +234,7 @@ class _SareeState extends State<Saree> {
                     "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -287,7 +287,7 @@ class _SareeState extends State<Saree> {
                     "Delivery \$50",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -340,7 +340,7 @@ class _SareeState extends State<Saree> {
                     "Free Delivery",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold),
                   ),
                 ),

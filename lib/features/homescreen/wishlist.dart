@@ -74,10 +74,10 @@ class _WishlistState extends State<Wishlist> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "206 with 1 special Offer",
+                    "\$206 with 1 special Offer",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -88,7 +88,7 @@ class _WishlistState extends State<Wishlist> {
                     "Modern Stylish Frock",
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 12,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -138,10 +138,10 @@ class _WishlistState extends State<Wishlist> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "1000 with 1 special Offer",
+                    "\$1000 with 1 special Offer",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -152,7 +152,7 @@ class _WishlistState extends State<Wishlist> {
                     "Modern Stylish Saree",
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 12,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -202,10 +202,10 @@ class _WishlistState extends State<Wishlist> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "150 with 1 special Offer",
+                    "\$150 with 1 special Offer",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -216,7 +216,7 @@ class _WishlistState extends State<Wishlist> {
                     "Printed Duppetta",
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 12,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -266,10 +266,10 @@ class _WishlistState extends State<Wishlist> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "300 with 1 special Offer",
+                    "\$300 with 1 special Offer",
                     style: TextStyle(
                         color: Colors.red,
-                        fontSize: 12,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -280,7 +280,7 @@ class _WishlistState extends State<Wishlist> {
                     "Modern Stylish tops",
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 12,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold),
                   ),
                 ),

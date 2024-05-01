@@ -69,7 +69,7 @@ class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/frock1-removebg-preview.png",
+                      "asset/images/frock-removebg-preview.png",
                       height: 150,
                     ),
                   ),

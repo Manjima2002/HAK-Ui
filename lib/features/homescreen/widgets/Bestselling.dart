@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/features/detail_page.dart/bestselling2_detail.dart';
+import 'package:flutter_application_1/features/detail_page.dart/bestselling_detail.dart';
 
 class Bestcelling extends StatefulWidget {
   const Bestcelling({super.key});
@@ -45,11 +47,17 @@ class _BestcellingState extends State<Bestcelling> {
                 ],
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Bestselling_detailpage()),
+                  );
+                },
                 child: Container(
                   margin: EdgeInsets.all(10),
                   child: Image.asset(
-                    "asset/images/frock-removebg-preview.png",
+                    "asset/images/frock6-removebg-preview.png",
                     height: 150,
                   ),
                 ),
@@ -72,7 +80,7 @@ class _BestcellingState extends State<Bestcelling> {
                   "Modern Stylish Frock",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold),
                 ),
               ),
@@ -109,7 +117,13 @@ class _BestcellingState extends State<Bestcelling> {
                 ],
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Bestselling2_detailpage()),
+                  );
+                },
                 child: Container(
                   margin: EdgeInsets.all(10),
                   child: Image.asset(
@@ -136,7 +150,7 @@ class _BestcellingState extends State<Bestcelling> {
                   "Modern Stylish Kurta",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold),
                 ),
               ),
