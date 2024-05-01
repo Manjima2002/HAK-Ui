@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/features/homescreen/home_page.dart';
-import 'package:flutter_application_1/features/homescreen/widgets/appbar.dart';
 
-class Combo_two_detailpage extends StatefulWidget {
-  const Combo_two_detailpage({super.key});
+class Combo3_detailpage extends StatefulWidget {
+  const Combo3_detailpage({super.key});
 
   @override
-  State<Combo_two_detailpage> createState() => _Combo_two_detailpageState();
+  State<Combo3_detailpage> createState() => _Combo3_detailpageState();
 }
 
-class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
+class _Combo3_detailpageState extends State<Combo3_detailpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: InkWell(
           child: Text(
-            "Special Offers",
+            "Combo Offers",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
@@ -54,7 +53,7 @@ class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
-                        "30%",
+                        "10%",
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -69,7 +68,7 @@ class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/frock1-removebg-preview.png",
+                      "asset/images/combo3.jpg",
                       height: 150,
                     ),
                   ),
@@ -78,7 +77,7 @@ class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "\$206 with 1 special Offer",
+                    "\$600 with special Offer",
                     style: TextStyle(
                         color: Colors.red,
                         fontSize: 12,
@@ -89,7 +88,7 @@ class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Modern Stylish Frock",
+                    "Modern Stylish Tops",
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 12,
@@ -133,7 +132,7 @@ class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "asset/images/kurta-removebg-preview.png",
+                      "asset/images/combo4.jpg",
                       height: 150,
                     ),
                   ),
@@ -142,7 +141,7 @@ class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "\$206 with 1 special Offer",
+                    "\$650 with 1 special Offer",
                     style: TextStyle(
                         color: Colors.red,
                         fontSize: 12,
@@ -153,7 +152,7 @@ class _Combo_two_detailpageState extends State<Combo_two_detailpage> {
                   padding: EdgeInsets.only(bottom: 8),
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Modern Stylish Kurta",
+                    "Modern Stylish Tops",
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 12,

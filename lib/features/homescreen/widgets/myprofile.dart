@@ -27,8 +27,7 @@ class _MyprofileState extends State<Myprofile> {
         centerTitle: true,
         title: Text(
           "My Profile",
-          style: TextStyle(color: Colors.black, 
-          fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.pinkAccent,
       ),
@@ -65,19 +64,19 @@ class _MyprofileState extends State<Myprofile> {
                   icon: Icons.phone,
                 ),
                 ProfileTile(
-                  label: 'Email',
+                  label: 'Anjalimishra@gmail.com',
                   icon: Icons.email,
                 ),
                 ProfileTile(
-                  label: 'Pincode',
+                  label: '680645',
                   icon: Icons.pin,
                 ),
                 ProfileTile(
-                  label: 'State',
+                  label: 'Kannur',
                   icon: Icons.location_city,
                 ),
                 ProfileTile(
-                  label: 'City',
+                  label: 'Talassery',
                   icon: Icons.pin,
                 ),
               ],

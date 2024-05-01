@@ -56,7 +56,7 @@ class _EditprofileState extends State<Editprofile> {
                   padding: const EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Enter your name',
+                      // hintText: 'Enter your name',
                       labelText: 'Name',
                       labelStyle: TextStyle(color: Colors.black),
                       border: OutlineInputBorder(

@@ -58,10 +58,10 @@ class _BestcellingState extends State<Bestcelling> {
                 padding: EdgeInsets.only(bottom: 8),
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "206 with 1 special Offer",
+                  "\$206 with 1 special Offer",
                   style: TextStyle(
                       color: Colors.red,
-                      fontSize: 12,
+                      fontSize: 13,
                       fontWeight: FontWeight.bold),
                 ),
               ),
@@ -72,7 +72,7 @@ class _BestcellingState extends State<Bestcelling> {
                   "Modern Stylish Frock",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 10,
+                      fontSize: 12,
                       fontWeight: FontWeight.bold),
                 ),
               ),
@@ -122,10 +122,10 @@ class _BestcellingState extends State<Bestcelling> {
                 padding: EdgeInsets.only(bottom: 8),
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "206 with 1 special Offer",
+                  "\$500 with 1 special Offer",
                   style: TextStyle(
                       color: Colors.red,
-                      fontSize: 12,
+                      fontSize: 13,
                       fontWeight: FontWeight.bold),
                 ),
               ),
@@ -136,7 +136,7 @@ class _BestcellingState extends State<Bestcelling> {
                   "Modern Stylish Kurta",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 10,
+                      fontSize: 12,
                       fontWeight: FontWeight.bold),
                 ),
               ),
