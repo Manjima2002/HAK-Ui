@@ -77,7 +77,7 @@ class _MyprofileState extends State<Myprofile> {
                 ),
                 ProfileTile(
                   label: 'Talassery',
-                  icon: Icons.pin,
+                  icon: Icons.place,
                 ),
               ],
             ),
